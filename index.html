@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaXai, the friendly assistant behind LAPZ</title>
+  <meta name="description" content="MaXai is the assistant for LAPZ, the Australian car community platform. MaXai sends text messages to LAPZ members and founders.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --text: #ffffff;
+      --muted: #f0f0f0;
+      --accent: #ffe14d;
+      --accent-text: #0a0a0a;
+      --line: #4a4a4a;
+      --focus: #ffe14d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 22px;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      line-height: 1.55;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-underline-offset: 0.15em;
+    }
+
+    a:hover {
+      text-decoration-thickness: 3px;
+    }
+
+    a:focus-visible,
+    .button:focus-visible {
+      outline: 4px solid var(--focus);
+      outline-offset: 4px;
+    }
+
+    .wrap {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+
+    header {
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(3.2rem, 14vw, 5.2rem);
+      font-weight: 800;
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+    }
+
+    .tagline {
+      margin: 0;
+      font-size: clamp(1.15rem, 4.5vw, 1.45rem);
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1.3;
+    }
+
+    main p {
+      margin: 0 0 1.25rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    h2 {
+      margin: 0 0 0.85rem;
+      font-size: clamp(1.5rem, 5vw, 1.85rem);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .sms {
+      margin: 2rem 0;
+      padding: 1.35rem 1.25rem;
+      border: 2px solid var(--line);
+      border-radius: 1rem;
+    }
+
+    .sms ul {
+      margin: 0;
+      padding: 0 0 0 1.35rem;
+    }
+
+    .sms li {
+      margin: 0 0 0.85rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .sms li:last-child {
+      margin-bottom: 0;
+    }
+
+    .cta {
+      margin: 2.25rem 0 0;
+    }
+
+    .button {
+      display: inline-block;
+      min-height: 4rem;
+      padding: 1rem 1.75rem;
+      background: var(--accent);
+      color: var(--accent-text);
+      font-size: 1.4rem;
+      font-weight: 800;
+      text-decoration: none;
+      border-radius: 0.7rem;
+      line-height: 1.2;
+    }
+
+    .button:hover {
+      filter: brightness(1.08);
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 2px solid var(--line);
+      font-size: 1rem;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>MaXai</h1>
+      <p class="tagline">The friendly assistant behind LAPZ</p>
+    </header>
+
+    <main>
+      <p>
+        MaXai is the assistant for <a href="https://lapz.au">LAPZ</a>, the Australian car community platform at
+        <a href="https://lapz.au">lapz.au</a>. MaXai sends text messages to LAPZ members and founders, such as welcome messages, event reminders and account notices.
+      </p>
+
+      <section class="sms" aria-labelledby="sms-heading">
+        <h2 id="sms-heading">SMS from MaXai</h2>
+        <ul>
+          <li>Messages come from the sender name &ldquo;MaXai&rdquo;.</li>
+          <li>Members can reply STOP to opt out.</li>
+          <li>MaXai never asks for passwords or payment details by text.</li>
+        </ul>
+      </section>
+
+      <p class="cta">
+        <a class="button" href="https://lapz.au">Visit LAPZ</a>
+      </p>
+    </main>
+
+    <footer>
+      <p>
+        MaXai is part of LAPZ, operated by BUCSTER (registered business name), ABN 61 078 903 290, Queensland, Australia.
+        Contact us through <a href="https://lapz.au">lapz.au</a>.
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
